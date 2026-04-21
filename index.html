@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello, CPSU!</title>
+  <style>
+    body {
+      /* DARK PURPLE BACKGROUND NA ITO */
+      background: linear-gradient(to bottom, #5A189A, #240046);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      margin: 0;
+      padding: 30px;
+      text-align: center;
+    }
+    .image-row {
+      display: flex;
+      gap: 60px; 
+      /* MALAKI ANG AGWAT PARA HINDI MAGKADIKIT */
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    img {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    iframe, textarea, button {
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+</body>
+  <div class="image-row">
+    <img src="Amie.jpeg" alt="Amie" width="200">
+      <p>Hi! I'm Ronamie Alegria bachelor of science information technology</p> <h1>My project </h1>
+    <img src="t-shirt.jpg" alt="Activity" width="200">
+    <img src="Product.jpg" alt="Activity" width="200"><h1>Certificates</h1>
+    <img src="certificate.jpeg" alt="Activity" width="200">
+    <img src="seminar.jpeg" alt="Activity" width="200"
+  <h1>Favorite sports</h1>
+  <img src="badminton.png" alt="Activity" width="200">
+   <img src="Chess.png" alt="Activity" width="200">
+  </div>
+  <p>
+    <a href=" " target="_blank">
+      1. CANVA PORTFOLIO
+    </a><br>
+    <a href=" " target="_blank">
+      2. PROBLEM AND SOLUTION
+    </a><br>
+    <a href="https://www.figma.com/proto/iG6oqZoPdLfowlPm3n6jqP/Untitled?node-id=7-136&p=f&t=GURskTzNmW6arDzm-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">
+      3. PORTFOLIO USING FIGMA
+    </a>
+  </p>
+  <div>
+      <h1>Leave a message</h1>
+    <textarea id="userMessage" rows="4" cols="30" placeholder="Enter your message here"></textarea><br>
+    <button onclick="sendMessage()">Send</button>
+  <script>
+    function sendMessage() {
+      var message = document.getElementById("userMessage").value;
+      alert("Message sent: " + message)
+      document.getElementById("userMessage").value = "send";
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video Tutorials</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  .video-card {
+    width: 320px;
+    margin: 20px auto;
+  }
+  .video-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  .video-frame iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+  }
+  .video-title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+  <h2> this video can help you on how to use this platform</h2></h2>
+<div class="video-card">
+  <div class="video-frame">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" 
+      allowfullscreen></iframe>
+  </div>
+  <div class="video-title">Tutorial 1</div>
+</div>
+<!-- VIDEO 1-->
+<div class="video-card">
+  <div class="video-frame">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" 
+      allowfullscreen></iframe>
+  </div>
+  <div class="video-title">Tutorial 2</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Purple Contact Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #6a0dad, #b266ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 35px;
+      width: 360px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #6a0dad;
+    }
+
+    label {
+      font-weight: 600;
+      margin-top: 10px;
+      display: block;
+      color: #4b0082;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #6a0dad;
+      box-shadow: 0 0 5px rgba(106,13,173,0.3);
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 14px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #6a0dad, #b266ff);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .chat-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, #6a0dad, #b266ff);
+      color: white;
+      padding: 14px 22px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .chat-btn:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Contact Me</h2>
+
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Your Name">
+
+      <label>Email</label>
+      <input type="email" placeholder="Your Email">
+
+      <label>Message</label>
+      <textarea placeholder="How can I help you?"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <button class="chat-btn">Chat with me!</button>
+</body>
+</html>
+</body>
+</html>
